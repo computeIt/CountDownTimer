@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         soundPool = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);       //add some music
         soundPool.load(this, R.raw.mysound, 1);
 
-
         start.setOnClickListener(this);
         stop.setOnClickListener(this);
     }
