@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.addy.timer.MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_00_30"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/input"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@id/timer"
+        android:text="@string/start"
+        android:textSize="30dp"
+        android:layout_margin="8dp"
+        />
+
+</RelativeLayout>
